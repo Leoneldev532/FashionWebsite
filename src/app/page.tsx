@@ -139,11 +139,11 @@ export default function Home() {
                 <div className="w-full  h-[21.54rem]  flex gap-x-4 justify-start items-center">
 
 
-    <div className="w-1/2 flex  bg-white relative flex-col h-full justify-start gap-y-4 overflow-hidden  rounded-lg border">
+    <div className="w-1/2 flex  group bg-white relative flex-col h-full justify-start gap-y-4 overflow-hidden  rounded-lg border">
  <div className="w-full  absolute flex justify-start items-center ">
-
-<Image src={totothesfrance} className="object-contain w-full relative -top-4 " alt="photo1" />
-
+        <div className="w-full bgfrancetotote flex h-[9rem] justify-center items-center">
+<Image src={totothesfrance} className="object-contain relative transform group-hover:-rotate-12 transition-all ease duration-500 group-hover:scale-125  " alt="photo1" />
+</div>
 </div>
 
 <div className="flex w-full p-7 absolute h-full justify-end  flex-col gap-y-5">
