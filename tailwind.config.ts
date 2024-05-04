@@ -20,6 +20,9 @@ const config: Config = {
         "custom-marron-darklight":"#EBE0D8",
         "custom-marron-dark":"#30171B",
         "custom-light-marron":"#816A6C",
+      },
+      fontFamily:{
+        "text-sm":"0.9rem"
       }
     },
   },

@@ -22,7 +22,7 @@ import Image from "next/image";
 import Link from "next/link";
 export default function Home() {
   return (
-   <div className="flex flex-col gap-y-4  min-h-screen w-full relative">
+   <div className="flex flex-col gap-y-4   w-full relative">
 
     <section className="relative w-full">
         <div className=" w-full z-0">
@@ -65,7 +65,7 @@ export default function Home() {
 
       <div className="relative z-10 flex flex-col justify-center items-center ">
        <Link href="/" className="relative" >
-        <button className="text-lg py-7"> decouvrir </button>
+        <button className="text-lg  py-7"> decouvrir </button>
         </Link> 
 
         <svg width="2" height="400" className="relative" viewBox="0 0 2 400" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -87,13 +87,13 @@ export default function Home() {
 
       </section>
 
-      <section className="relative  flex justify-center items-center min-h-screen   py-28  w-full">
+      <section className="relative   flex justify-center items-center    py-28  w-full">
 
-        <div className="w-full relative z-40 flex flex-col gap-y-4">
+        <div className="w-[75rem]   relative z-40 flex flex-col gap-y-4">
 
-          <div className="flex justify-center items-center gap-4">
+          <div className="flex w-full justify-center items-center gap-4">
 
-            <div className="min-h-[39rem]   firstcardbg  border  w-3/12 flex flex-col justify-end rounded-lg">
+            <div className="min-h-[42rem]   firstcardbg  border  w-4/12 flex flex-col justify-end rounded-lg">
 
               <div className="w-full  h-1/2 flex justify-start items-center ">
 
@@ -103,7 +103,7 @@ export default function Home() {
 
                 <div className="flex w-full p-7  flex-col gap-y-5">
 
-                  <h5 className="text-3xl "> élégante et sophistiquée</h5>
+                  <h5 className="text-3xl text-custom-marron-dark "> élégante et sophistiquée</h5>
                   <span className=" w-full font-thin  ">
                   Design raffiné et ornements exclusifs pour une expérience de vapotage distinguée et élégante
                   </span>
@@ -111,15 +111,15 @@ export default function Home() {
 
             </div>
             
-            <div className="flex flex-col  gap-y-4 w-5/12">
+            <div className="flex flex-col gap-y-4 w-7/12">
 
-              <div className="w-full flex min-h-[13rem] bg-red-500  border rounded-lg  items-end overflow-hidden justify-end relative">
+              <div className="w-full flex min-h-[17rem]  border rounded-lg  items-end overflow-hidden justify-end relative">
                 <div className="w-full absolute z-0  flex justify-start items-center">
                     <Image  src={boule3} className="object-contain w-full relative top-4 h-full" alt="boule" />
                 </div>
-                <div className="w-full py-[5.5rem]  relative z-10 bg-transparent flex justify-start items-end flex-col ">
+                <div className="w-full py-[5.5rem] h-full  relative z-10 bg-transparent flex justify-start items-end flex-col ">
                   <div className="w-7/12  h-full  flex flex-col justify -start gap-y-5">
-                  <h4 className="text-3xl">personnalisable</h4>
+                  <h4 className="text-3xl text-custom-marron-dark ">personnalisable</h4>
                   <span className="font-thin  w-full text-balance">
                   Ornements et accessoires premium pour créer une vapoteuse unique qui reflète votre style personnel
                   </span>
@@ -129,7 +129,7 @@ export default function Home() {
 
               </div>
 
-                <div className="w-full  h-[19rem]  flex gap-x-4 justify-start items-center">
+                <div className="w-full  h-[21.54rem]  flex gap-x-4 justify-start items-center">
 
 
     <div className="w-1/2 flex  relative flex-col h-full justify-start gap-y-4 overflow-hidden  rounded-lg border">
@@ -141,7 +141,7 @@ export default function Home() {
 
 <div className="flex w-full p-7 absolute h-full justify-end  flex-col gap-y-5">
 
-<h5 className="text-3xl "> made in france</h5>
+<h5 className="text-3xl text-custom-marron-dark "> made in france</h5>
 <span className=" w-full font-thin  ">
 Savoir-faire français pour une expérience de suçotage authentique et exceptionnelle
 </span>
@@ -154,7 +154,7 @@ Savoir-faire français pour une expérience de suçotage authentique et exceptio
 
 <div className="flex w-full p-7 absolute h-full justify-start  flex-col gap-y-5">
 
-<h5 className="text-3xl "> innovante</h5>
+<h5 className="text-3xl text-custom-marron-dark "> innovante</h5>
 <span className=" w-full font-thin  ">
 Technologies de pointe offrant une expérience de suçotage révolutionnaire et inégalée.
 </span>
@@ -162,7 +162,7 @@ Technologies de pointe offrant une expérience de suçotage révolutionnaire et 
 
 <div className="w-full  absolute flex justify-end items-end ">
 
-<Image src={totothess} className="object-contain w-full relative  h-1/4 top-28 " alt="photo1" />
+<Image src={totothess} className="object-contain w-full relative  h-1/4 top-36 " alt="photo1" />
 
 </div>
 </div>
@@ -175,11 +175,11 @@ Technologies de pointe offrant une expérience de suçotage révolutionnaire et 
 
           <div className="flex  min-h-[19rem]  h-[19rem]  gap-x-4 justify-center items-center ">
 
-            <div className="h-full relative overflow-hidden border w-[44rem] bg-custom-blue rounded-lg    ">
+            <div className="h-full relative overflow-hidden border w-[47.55rem] bg-custom-blue rounded-lg    ">
 
               <div className="absolute p-7 gap-y-5 flex flex-col w-full gap-y- justify-start items-start">
 
-              <h4 className="text-3xl">savoureuse</h4>
+              <h4 className="text-3xl text-custom-marron-dark ">savoureuse</h4>
                   <span className="font-thin max-w-sm  w-full text-balance">
                   Palette de saveurs exquises pour une expérience de suçotage délicieusement satisfaisante et immersive.
                   </span>
@@ -196,7 +196,7 @@ Technologies de pointe offrant une expérience de suçotage révolutionnaire et 
 
             </div>
           
-          <div className="h-full border w-[18.95rem] relative bgcard6  rounded-lg ">
+          <div className="h-full border w-[21rem]  relative bgcard6  rounded-lg ">
 
           <div className="absolute h-full z-0 px-7 pt-8">
 
@@ -208,7 +208,7 @@ Technologies de pointe offrant une expérience de suçotage révolutionnaire et 
 
           <div className=" absolute gap-y-5 z-10 flex flex-col justify-end h-full items-end">
           <div className="flex flex-col gap-y-5 p-7">
-          <h4 className="text-3xl text-balance">hébergement 100% français</h4>
+          <h4 className="text-3xl text-balance text-custom-marron-dark ">hébergement 100% français</h4>
                   <span className="font-thin max-w-sm  w-full text-balance">
                   Notre site web est hébergé en france grâce à notre partenaire o2switch
                   </span>
@@ -228,7 +228,7 @@ Technologies de pointe offrant une expérience de suçotage révolutionnaire et 
 
       </section>
 
-      <section className="min-h-screen flex flex-col ">
+      <section className=" flex flex-col ">
 
         <div className="min-h-[30vh] relative flex w-full justify-center items-center ">
 
@@ -243,19 +243,19 @@ Technologies de pointe offrant une expérience de suçotage révolutionnaire et 
         <div className="flex flex-col  gap-y-20  justify-center items-center bgsectechno pt-36 w-full relative ">
 
 
-          <div className="w-full flex relative justify-center items-center gap-x-14 ">
+          <div className="w-6/12  flex relative justify-start items-center gap-x-14 ">
 
          
 
 
-            <div className="flex flex-col h-full  justify-start  items-start px-8 max-w-sm   gap-y-5">
+            <div className="flex flex-col h-full  justify-start  items-start    w-1/2  px-8  gap-y-5">
 
                 <h4 className="text-6xl text-balance max-w-sm text-custom-marron-dark">
                 technologie plug’n’tote
                 </h4>
-                <p className=" text-balances text-left w-full text-lg ">
+                <p className=" text-balances text-left w-full text-lg  ">
                 La tototte est équipée de la
-                 <span className="font-bold text-custom-marron-dark">  technologie 
+                 <span className="font-bold text-custom-marron-dark max-w-sm">  technologie 
                  plug&apos;n&apos;tote</span>, permettant de
                   changer de plug à volonté, offrant ainsi un accès à une
                    <span className="font-bold text-custom-marron-dark "> gamme infinie de saveurs
@@ -267,7 +267,7 @@ Technologies de pointe offrant une expérience de suçotage révolutionnaire et 
             </div>
 
             <div className="flex flex-col pt-12 justify-end items-end  gap-y-5">
-              <p className="max-w-xs text-lg">
+              <p className="max-w-xs text-lg ">
               Cette technologie vous permet de changer en un clin d’œil de saveur pour 
               <span className="font-bold text-custom-marron-dark"> voyager du bout des </span>.
               </p>
@@ -278,7 +278,7 @@ Technologies de pointe offrant une expérience de suçotage révolutionnaire et 
 
             <div className="relative z-10 flex flex-col justify-center items-center ">
        <Link href="/" className="relative" >
-        <button className="text-lg py-7"> Découvrir les saveurs </button>
+        <button className="text-lg  py-7"> Découvrir les saveurs </button>
         </Link> 
 
         <svg width="2" height="400" className="relative" viewBox="0 0 2 400" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -298,31 +298,31 @@ Technologies de pointe offrant une expérience de suçotage révolutionnaire et 
 
       </section>
 
-      <section className="min-h-screen flex flex-col ">
+      <section className=" flex flex-col ">
 
         <div className="flex flex-col w-full gap-y-28">
 
             <div className="flex flex-col relative  justify-center items-center w-full">
 
-              <div className="flex relative  gap-x-4 justify-center items-center">
+              <div className="flex relative   gap-x-4 justify-center items-center">
 
                 <div className="absolute flex justify-end top-[70%] h-36 w-full items-center ">
-                <Image src={radialgrad} className="object-contain  relative   " alt="photo1" />
+                <Image src={radialgrad} className="object-contain h-40  relative   " alt="photo1" />
+
+
+                </div>
+
+                <div className="firstimage relative ">
+
+                <Image src={redTotothe} className="object-fill  relative    " alt="photo1" />
+
 
 
                 </div>
 
                 <div className="firstimage relative">
 
-                <Image src={redTotothe} className="object-contain  relative  " alt="photo1" />
-
-
-
-                </div>
-
-                <div className="firstimage relative">
-
-<Image src={greentotothe} className="object-contain  relative  " alt="photo1" />
+<Image src={greentotothe} className="object-contain h-40  relative  " alt="photo1" />
 
 
 
@@ -330,14 +330,14 @@ Technologies de pointe offrant une expérience de suçotage révolutionnaire et 
 
 <div className="firstimage relative">
 
-<Image src={pinktotothe} className="object-contain  relative  " alt="photo1" />
+<Image src={pinktotothe} className="object-contain h-40  relative  " alt="photo1" />
 
 
 
 </div>
 <div className="firstimage relative">
 
-<Image src={mutil2totothe} className="object-contain  relative  " alt="photo1" />
+<Image src={mutil2totothe} className="object-contain h-40  relative  " alt="photo1" />
 
 
 
@@ -370,17 +370,20 @@ Technologies de pointe offrant une expérience de suçotage révolutionnaire et 
 
 
               </div>
-              <div className="relative flex  py-28">
+              <div className="relative flex w-full justify-center items-center  pt-28">
 
-                <div className="flex gap-x-24 ">
+              <div className="w-6/12  justify-start items-center  flex  gap-y-6">
+                <div className="flex justify-center items-center  px-12 gap-x-24 w-full">
 
+                    
+                  <div className="w-1/2 flex justify-start items-center gap-x-24 ">
                   <div className="flex flex-col justify-start items-start text-left gap-y-6">
 
-                    <b className="text-6xl gustavob font-bold text-custom-marron-dark">
+                    <span className="text-6xl gustavom font-extrabold text-custom-marron-dark">
                     30
-                    </b>
+                    </span>
 
-                    <span className="text-sm text-balance max-w-[5rem] ">
+                    <span className="text-lg text-balance max-w-[5rem] ">
 
                     Saveurs disponibles
 
@@ -392,11 +395,11 @@ Technologies de pointe offrant une expérience de suçotage révolutionnaire et 
                   
                   <div className="flex flex-col justify-start items-start text-left gap-y-6">
 
-                    <b className="text-6xl gustavob font-bold text-custom-marron-dark">
+                    <b className="text-6xl gustavom  font-bold text-custom-marron-dark">
                     11
                     </b>
 
-                    <span className="text-sm text-balance max-w-[5rem] ">
+                    <span className="text-lg text-balance max-w-[5rem] ">
 
                     Vertus
               médicinales 
@@ -405,12 +408,16 @@ Technologies de pointe offrant une expérience de suçotage révolutionnaire et 
 
 
                   </div>
-
-                  <span className="max-w-xs pt-20 text-sm">
+                  </div>
+                  
+                    
+                  <div className="w-1/2 flex justify-start items-center gap-x-24 ">
+                  <span className="max-w-xs  text-lg">
                   Laissez-vous tenter par les saveurs des différents plugs et découvrez un monde de délices pour chaque envie.
                   </span>
+                  </div>
 
-
+                </div>
                 </div>
 
 
@@ -428,15 +435,15 @@ Technologies de pointe offrant une expérience de suçotage révolutionnaire et 
       </section>
 
 
-      <section className=" h-auto w-full justify-start items-center flex flex-col ">
+      <section className=" h-auto pt-72 w-full justify-start items-center flex flex-col ">
         <div className=" flex flex-col w-6/12 justify-start items-start ">
         <div className=" px-8 max-w-sm flex flex-col gap-y-5">
 
-        <h4 className="text-6xl text-balance max-w-14 text-custom-marron-dark">
+        <h4 className="text-7xl text-balance max-w-14 text-custom-marron-dark">
         suçotez sans 
 soucis
                 </h4>
-                <p className=" text-balance max-w-xs text-left w-full text-sm  ">
+                <p className=" text-balance max-w-xs text-left w-full text-lg  ">
                 La tototte offre une autonomie impressionnante de 50 heures 
                 de suçotage grâce à sa batterie au lithium, assurant ainsi des heures
                  de plaisir ininterrompu pour encore plus de confort et de tranquillité.
@@ -449,7 +456,7 @@ soucis
         </div>
         <div className="w-full flex  relative  justify-center items-center">
 
-<Image src={totote} className="object-contain relative h-[30rem] " alt="photo1" />
+<Image src={totote} className="object-contain relative h-[40rem] " alt="photo1" />
 
 
         </div>
@@ -457,16 +464,16 @@ soucis
  <div className=" w-full justify-start  items-end flex  flex-col  gap-y-5">
         <div className="w-1/2 px-8 justify-start items-start flex flex-col gap-y-5">
         <div className="flex flex-col justify-start gap-y-3 items-start">
-        <span className="text-6xl text-balance gustavob max-w-sm  text-custom-marron-dark">
+        <span className="text-6xl text-balance gustavob max-w-sm  font-extrabold text-custom-marron-dark">
            50 h
                 </span>
-                <span className="text-xs max-w-36">
+                <span className="text-sm max-w-28 text-balance">
                 de suçotage Bluetooth sans interruption
                 </span>
 </div>
 
 
-                <p className=" text-balance max-w-xs text-left w-full text-sm  ">
+                <p className=" text-balance max-w-xs text-left w-full text-lg  ">
                Grâce aux technologies sans contact profitez d’une recharge rapide sur son socle à induction
                 </p>
 
@@ -482,20 +489,20 @@ soucis
 
             <section className=" bgspotify w-full justify-center items-center flex flex-col ">
 
-              <div className="w-6/12 flex flex-col  py-56">
+              <div className="w-6/12  flex flex-col  py-56">
 
                 <div className="w-full rounded-lg border border-custom-marron  h-96 ">
 
 
                   </div>
 
-                  <div className="w-full pt-20 flex justify-center items-center">
+                  <div className="w-full pt-20    flex justify-start items-start">
 
-                    <h2 className="text-6xl w-1/2 text-custom-marron-dark  max-w-xs">
-                    suçotez vos titres préférés
-                    </h2>
+                    <div className="text-6xl w-1/2 px-8  text-custom-marron-dark flex justify-start items-start ">
+                    <h2 className="max-w-xs ">suçotez vos titres préférés</h2>
+                    </div>
 
-                    <div className="flex w-1/2 px-16  gap-y-8 flex-col justify-start items-start">
+                    <div className="flex w-1/2 px-8 gap-y-8 flex-col justify-start items-start">
                         <div className="flex flex-col justify-start items-start gap-y-2">
                         <button className="px-4 gap-x-1 py-2 border border-custom-marron-dark flex justify-center items-center">
                         <svg
@@ -511,7 +518,7 @@ soucis
   />
 </svg>
 
-<span className="text-sm  ">
+<span className="text-lg  ">
 Spotify Connect® 
 </span>
 
@@ -519,7 +526,7 @@ Spotify Connect®
                         <span className="text-sm"> En partenariat exclusif avec Spotify </span>
                         </div>
 
-                        <p className="text-sm max-w-sm">
+                        <p className="text-lg max-w-lg text-balance w-full">
                         En connectant votre tototte à votre smartphone par la technologie bluetooth, 
                         dégustez vos morceaux et vos vidéos préférées directement dans votre bouche
                         </p>
@@ -548,15 +555,15 @@ Spotify Connect®
     <div className="flex flex-col gap-y-6 w-full ">
 
 
-  <h2 className="text-6xl text-custom-marron-dark text-balance text-custom-dark-marron max-w-lg">
+  <h2 className="text-6xl text-custom-marron-dark text-balance text-custom-dark-marron max-w-sm">
   le jus de
 mynthos
                     </h2>
 
-                    <button className="px-4 gap-x-1 py-2 border border-custom-marron-dark flex justify-center items-center">
+                    <button className=" gap-x-1  flex justify-start items-center">
     
 
-<span className="text-sm  ">
+<span className="text-lg border border-custom-marron-dark py-2 px-4 flex-shrink-0 text-custom-marron-dark  ">
 Collaboration exclusive
 </span>
 
@@ -566,7 +573,7 @@ Collaboration exclusive
 
     </div>
 
-    <span className="text-sm">
+    <span className="text-lg max-w-lg text-balance">
     Découvrez l&apos;exclusivité : la fusion inédite entre Le Jus de Mynthos et the french tototte®, offrant un goût rare et recherché. Une collaboration qui révèle l&apos;essence de l&apos;excellence et de l&apos;originalité, à savourer sans plus attendre.
 
       </span>
@@ -578,21 +585,21 @@ Collaboration exclusive
               </div>
             </section>
 
-            <section className="  min-h-screen w-full justify-center items-center flex flex-col ">
+            <section className=" pt-56  w-full justify-center items-center flex flex-col ">
                 <div className="w-6/12 flex-col flex justify-center gap-y-8 items-center">
 
                   <h2 className="text-6xl text-custom-marron-dark max-w-sm text-balance text-center">ils ont suçoté,
 ils ont adoré</h2>
-    <span className="text-sm text-center max-w-lg text-balance">
+    <span className="text-lg  text-center max-w-lg text-balance">
     Nos totottes sont utilisées par les plus grands de ce monde et si vous voulez mon avis ce n’est pas un hasard
     </span>
                 </div>
               </section>
 
-              <section className="flex gap-x-32 justify-center items-center">
+              <section className="flex gap-x-32 pt-28 justify-center items-center">
 
 
-                <div className="flex flex-col  items-start justify-start  gap-y-6 ">
+                <div className="flex flex-col relative  left-[8%]  items-start justify-start  gap-y-6 ">
 
                   <div className="size-44 rounded-full overflow-hidden">
                         
@@ -622,7 +629,7 @@ ils ont adoré</h2>
                       <span className="text-sm">  Streamer </span>
                     </span>
 
-                    <p className="text-sm max-w-56">
+                    <p className="text-lg max-w-sm text-balance">
                     j&apos;ai arrêté de vape depuis que j&apos;ai découvert thefrenchtototte
                     </p>
 
@@ -631,7 +638,7 @@ ils ont adoré</h2>
                 </div>
 
 
-                <div className="flex flex-col relative top-36 left-[2%]  gap-y-6 ">
+                <div className="flex flex-col relative top-36 left-[6%]  gap-y-6 ">
 
 <div className="size-44 rounded-full overflow-hidden">
       
@@ -661,7 +668,7 @@ ils ont adoré</h2>
     <span className="text-sm">  YouTuber </span>
   </span>
 
-  <p className="text-sm max-w-56">
+  <p className="text-lg max-w-sm text-balance">
   J&apos;ai commandé un pack pour toute la famille et même mon fils Légolas San Goku adore sa the french tototte®
   </p>
 
@@ -700,7 +707,7 @@ ils ont adoré</h2>
     <span className="text-sm">  Streamer </span>
   </span>
 
-  <p className="text-sm max-w-56">
+  <p className="text-lg max-w-sm">
   Grâce à the french tototte® je régule mon taux d&apos;insuline parfaitement et je n&apos;achète plus de saumon ni de nutella !
   </p>
 
@@ -731,7 +738,7 @@ ils ont adoré</h2>
                     <div className="flex flex-col gap-y-8">
 
                           <h3 className="text-6xl text-custom-marron-dark "> personnalisez votre tototte </h3>
-                          <span className="text-sm text-balance">Vous allez créer la tototte idéale pour vous.
+                          <span className="text-lg text-balance">Vous allez créer la tototte idéale pour vous.
 À chacun son expérience, à chacun sa tototte.</span>
 
                     </div>
@@ -740,7 +747,7 @@ ils ont adoré</h2>
                     <div className="flex flex-col gap-y-8">
 
 <h3 className="text-6xl text-custom-marron-dark "> finition</h3>
-<span className="text-sm text-balance">Choisissez votre favorite</span>
+<span className="text-lg text-balance">Choisissez votre favorite</span>
 
 <div className="flex justify-start w-full items-center gap-x-4">
       
@@ -769,7 +776,7 @@ ils ont adoré</h2>
 <div className="flex flex-col gap-y-8">
 
 <h3 className="text-6xl text-custom-marron-dark "> ornement</h3>
-<span className="text-sm text-balance">Choisissez votre pierre précieuse</span>
+<span className="text-lg text-balance">Choisissez votre pierre précieuse</span>
 
 <div className="flex justify-start w-full items-center gap-x-4">
       
@@ -800,7 +807,7 @@ ils ont adoré</h2>
 
 
 <h3 className="text-6xl text-custom-marron-dark "> pack saveur</h3>
-<span className="text-sm text-balance">Choisissez votre pack de saveurs</span>
+<span className="text-lg text-balance">Choisissez votre pack de saveurs</span>
 
 <div className="flex justify-start flex-col gap-y-2 w-full items-center gap-x-4">
     
@@ -831,7 +838,7 @@ ils ont adoré</h2>
 <h3 className="text-custom-marron-dark text-xl ">Pack Suçoteur Pro</h3>
 <span className="text-sm"> 12 saveurs + 1 jus de Mynthos</span>
 </div>
-<span className="text-sm flex gap-x-4 "><span className="opacity-50  line-through">60€ </span>
+<span className="text-lg flex gap-x-4 "><span className="opacity-50  line-through">60€ </span>
   <span>49€</span></span>
 
 </div>   
@@ -862,7 +869,7 @@ ils ont adoré</h2>
 
       <div className="flex gap-y-2 flex-col w-full">
         <h4 className="text-4xl">votre panier est prêt</h4>
-        <span className="text-sm text-custom-light-marron">Récapitulatif de votre commande</span>
+        <span className="text-lg text-custom-light-marron">Récapitulatif de votre commande</span>
       </div>
 
       <div className="flex flex-col w-full gap-y-6">
@@ -945,7 +952,7 @@ tototte store  Lille
 
           </button>
 
-          <p className="text-xs text-balance text-custom-light-marron font-thin">
+          <p className="text-sm text-balance text-custom-light-marron font-thin">
           The French Tototte est couverte par une garantie limitée
            contre les défauts de fabrication pour une période de 2 mois
             à compter de la date d&qpos;achat. Cette garantie ne couvre pas 

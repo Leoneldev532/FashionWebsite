@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
 import Header from "./Components/header";
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +21,7 @@ export default function RootLayout({
       <body className={inter.className + "flex text-custom-light-marron bg-custom-white  flex-col justify-center items-center"}>
         <div className="flex w-full flex-col justify-center items-center">
         <Header />
-        <div className="relative flex justify-center w-full items-center">
+        <div className="relative flex  justify-center  w-full items-center">
           <div className="absolute top-0 left-0 z-0 w-full">
 
           <svg
@@ -82,10 +82,10 @@ export default function RootLayout({
 </svg>
 
           </div>
+          </div>
           <div className="relative flex w-full  justify-center items-center z-0">
         {children}
 
-        </div>
         </div>
         </div>
         </body>
