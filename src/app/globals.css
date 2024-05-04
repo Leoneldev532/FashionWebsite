@@ -94,17 +94,42 @@ h1,h2,h3,h4,h5,h6{
 
 
 .firstcardbg{
-    
+    transition: all ease 0.5s;
   background-image: linear-gradient(180deg, white, #EFF1FD);
+  &:hover{
+  /* background-blend-mode: multiply;        */
+  background-image: linear-gradient(180deg, white, rgba(206, 210, 241, 0.8));
+  }
 }
 
-.bgcard4{
-  background-image: linear-gradient(180deg, white, #EBE0D8);
-}
+
+
+.bgcard4 {
+  background-image: linear-gradient(180deg, white 1%, #EBE0D8 90%);
+  transition: background-image 0.3s ease;
+
+  &:hover {
+    background-image: linear-gradient(180deg, white 0%, #EBE0D8 50%);
+  
+}}
 
 .bgcard6{
   
   background:  #EBE0D8;
+  
+  &:hover {
+    background-color: transparent;
+    background-image: linear-gradient(180deg, transparent 0%, white 50%);
+  
+  }
+}
+
+.bgcard62{
+  
+  background: transparent;
+  &:hover {
+  background-image: linear-gradient(180deg, transparent 0%, white 50%);
+  }
 }
 
 .bgsectechno{
@@ -154,4 +179,6 @@ h1,h2,h3,h4,h5,h6{
   /* background-image: linear-gradient(180deg, transparent, #EBE0D8  ,transparent ); */
   background-image: linear-gradient(180deg, #D3D1D1  , rgba(239, 241, 253,0.2) );
 }
+
+
 

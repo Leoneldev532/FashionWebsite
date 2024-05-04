@@ -100,11 +100,11 @@ export default function Home() {
 
           <div className="flex w-full justify-center items-center gap-4">
 
-            <div className="min-h-[42rem]   firstcardbg  border  w-4/12 flex flex-col justify-end rounded-lg">
+            <div className="min-h-[42rem]   firstcardbg  transition-all ease duration-300  group border  w-4/12 flex flex-col justify-end rounded-lg">
 
-              <div className="w-full  h-1/2 flex justify-start items-center ">
+              <div className="w-full  h-1/2 flex justify-start items-center overflow-hidden ">
 
-                <Image src={totothes} className="contain pt-4" alt="photo1" />
+                <Image src={totothes} className="object-contain -translate-x-10 group-hover:-translate-x-2 duration-500 ease translate-all group-hover:scale-110 pt-4" alt="photo1" />
 
               </div>
 
@@ -120,14 +120,14 @@ export default function Home() {
             
             <div className="flex flex-col gap-y-4 w-7/12">
 
-              <div className="w-full flex min-h-[17rem]  border rounded-lg  items-end overflow-hidden justify-end relative">
+              <div className="w-full flex min-h-[17rem] group  bg-[#EEEEEE]  hover:bg-[#E1E3E3] border rounded-lg  items-end overflow-hidden justify-end relative">
                 <div className="w-full absolute z-0  flex justify-start items-center">
-                    <Image  src={boule3} className="object-contain w-full relative top-4 h-full" alt="boule" />
+                    <Image  src={boule3} className="object-contain transition-all ease-out duration-500  h-16  translate-y-4 -translate-x-4 group-hover:-translate-x-0 group-hover:translate-y-0     w-full relative top-8  h-full" alt="boule" />
                 </div>
                 <div className="w-full py-[5.5rem] h-full  relative z-10 bg-transparent flex justify-start items-end flex-col ">
                   <div className="w-7/12  h-full  flex flex-col justify -start gap-y-5">
                   <h4 className="text-3xl text-custom-marron-dark ">personnalisable</h4>
-                  <span className="font-thin  w-full text-balance">
+                  <span className="font-thin  max-w-sm w-full text-balance">
                   Ornements et accessoires premium pour créer une vapoteuse unique qui reflète votre style personnel
                   </span>
                   </div>
@@ -156,10 +156,10 @@ Savoir-faire français pour une expérience de suçotage authentique et exceptio
 </div>
 
 
-<div className="w-1/2 flex bgcard4  relative flex-col h-full justify-start gap-y-4 overflow-hidden  rounded-lg border">
+<div className="w-1/2 flex bgcard4  group  relative flex-col h-full justify-start gap-y-4 overflow-hidden  rounded-lg border">
  
 
-<div className="flex w-full p-7 absolute h-full justify-start  flex-col gap-y-5">
+<div className="flex w-full p-7  absolute h-full justify-start  flex-col gap-y-5">
 
 <h5 className="text-3xl text-custom-marron-dark "> innovante</h5>
 <span className=" w-full font-thin  ">
@@ -169,7 +169,7 @@ Technologies de pointe offrant une expérience de suçotage révolutionnaire et 
 
 <div className="w-full  absolute flex justify-end items-end ">
 
-<Image src={totothess} className="object-contain w-full relative  h-1/4 top-36 " alt="photo1" />
+<Image src={totothess} className="object-contain w-full relative  group-hover:top-28 transition-all ease duration-500 h-1/4 top-36 " alt="photo1" />
 
 </div>
 </div>
@@ -182,7 +182,7 @@ Technologies de pointe offrant une expérience de suçotage révolutionnaire et 
 
           <div className="flex  min-h-[19rem]  h-[19rem]  gap-x-4 justify-center items-center ">
 
-            <div className="h-full relative overflow-hidden border w-[47.55rem] bg-custom-blue rounded-lg    ">
+            <div className="h-full relative group  overflow-hidden border w-[47.55rem] bg-custom-blue rounded-lg    ">
 
               <div className="absolute p-7 gap-y-5 flex flex-col w-full gap-y- justify-start items-start">
 
@@ -197,23 +197,23 @@ Technologies de pointe offrant une expérience de suçotage révolutionnaire et 
                 
               <div className="w-full  h-full flex justify-end items-end ">
 
-<Image src={barretotothe} className="object-contain relative left-[20%] pt-4" alt="photo1" />
+<Image src={barretotothe} className="object-contain relative left-[20%] transition-all ease-in-out duration-500 group-hover:left-[1.5%] pt-4" alt="photo1" />
 
 </div>
 
             </div>
           
-          <div className="h-full border w-[21rem]  relative bgcard6  rounded-lg ">
+          <div className="h-full  overflow-hidden group border w-[21rem]  relative bgcard6  rounded-lg ">
 
           <div className="absolute h-full z-0 px-7 pt-8">
 
-
-<Image src={frenchdrap} className="object-contain h-16 relative  " alt="photo1" />
-
+      <div className="h-2 group-hover:h-full overflow-hidden transition-all ease-in-out duration-500  ">
+<Image src={frenchdrap} className="object-contain h-16  relative  " alt="photo1" />
+</div>
 
           </div>
 
-          <div className=" absolute gap-y-5 z-10 flex flex-col justify-end h-full items-end">
+          <div className=" absolute gap-y-5 z-10 flex flex-col bgcard62 justify-end h-full items-end">
           <div className="flex flex-col gap-y-5 p-7">
           <h4 className="text-3xl text-balance text-custom-marron-dark ">hébergement 100% français</h4>
                   <span className="font-thin max-w-sm  w-full text-balance">
