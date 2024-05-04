@@ -1,26 +1,25 @@
+import Etoiles from "@/../public/Etoiles.png";
+import baghera from "@/../public/baghera.png";
+import barretotothe from "@/../public/barretotothe.png";
+import boule3 from "@/../public/boule3.png";
+import clinthos from "@/../public/clinthos.png";
+import franceColortotothe from "@/../public/franceColortotothe.png";
+import frenchdrap from "@/../public/frenchdrap.png";
+import greentotothe from "@/../public/greentotothe.png";
+import joueur2 from "@/../public/joueur2.png";
+import limetothe from "@/../public/limetothe.png";
+import muti3totothe from "@/../public/muti3totothe.png";
+import mutil2totothe from "@/../public/mutil2totothe.png";
+import pinktotothe from "@/../public/pinktotothe.png";
+import radialgrad from "@/../public/radialgrad.png";
+import redTotothe from "@/../public/redTotothe.png";
+import redtotothes from "@/../public/redtotothes.png";
+import totote from "@/../public/totote.png";
+import totothesfrance from "@/../public/totothefrance gradient.png";
+import totothes from "@/../public/totothes.png";
+import totothess from "@/../public/totothess.png";
 import Image from "next/image";
 import Link from "next/link";
-import totothes from "@/../public/totothes.png"
-import boule3 from  "@/../public/boule3.png"
-import totothesfrance from  "@/../public/totothefrance gradient.png"
-import totothess from  "@/../public/totothess.png"
-import barretotothe from  "@/../public/barretotothe.png"
-import frenchdrap from  "@/../public/frenchdrap.png"
-import redtotothes from  "@/../public/redtotothes.png"
-import redTotothe from "@/../public/redTotothe.png"
-import pinktotothe from "@/../public/pinktotothe.png"
-import greentotothe from "@/../public/greentotothe.png"
-import multi1totothe from "@/../public/multi1totothe.png"
-import mutil2totothe from "@/../public/mutil2totothe.png"
-import franceColortotothe from "@/../public/franceColortotothe.png"
-import limetothe from "@/../public/limetothe.png"
-import muti3totothe from "@/../public/muti3totothe.png"
-import clinthos from "@/../public/clinthos.png"
-import radialgrad from "@/../public/radialgrad.png"
-import totote from "@/../public/totote.png"
-import baghera from "@/../public/baghera.png"
-import joueur2 from "@/../public/joueur2.png"
-import Etoiles from "@/../public/Etoiles.png"
 export default function Home() {
   return (
    <div className="flex flex-col gap-y-4  min-h-screen w-full relative">
@@ -568,7 +567,7 @@ Collaboration exclusive
     </div>
 
     <span className="text-sm">
-    Découvrez l&apos;exclusivité : la fusion inédite entre Le Jus de Mynthos et the french tototte®, offrant un goût rare et recherché. Une collaboration qui révèle l'essence de l'excellence et de l'originalité, à savourer sans plus attendre.
+    Découvrez l&apos;exclusivité : la fusion inédite entre Le Jus de Mynthos et the french tototte®, offrant un goût rare et recherché. Une collaboration qui révèle l&apos;essence de l&apos;excellence et de l&apos;originalité, à savourer sans plus attendre.
 
       </span>
 
