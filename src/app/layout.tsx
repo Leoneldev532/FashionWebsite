@@ -19,10 +19,10 @@ export default function RootLayout({
     <html lang="en">
       <meta charSet="utf-8"/>
       <body className={inter.className + "flex text-custom-light-marron bg-custom-white  flex-col justify-center items-center"}>
-        <div className="flex w-full flex-col justify-center items-center">
+        <div className="flex w-full flex-col relative  justify-center overflow-hidden items-center">
         <Header />
-        <div className="relative flex  justify-center  w-full items-center">
-          <div className="absolute top-0 left-0 z-0 w-full">
+        <div className="relative flex  justify-center   w-full items-center">
+          <div className="absolute top-0 left-0 h-auto z-0 w-full">
 
           <svg
   width={1450}

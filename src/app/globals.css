@@ -148,3 +148,10 @@ h1,h2,h3,h4,h5,h6{
   
   background-image: linear-gradient(180deg, rgba(239, 241, 253,0.2) 5%,#EFF1FD 20%, #EFF1FD  70% );
 }
+
+.bgherosection{
+  
+  /* background-image: linear-gradient(180deg, transparent, #EBE0D8  ,transparent ); */
+  background-image: linear-gradient(180deg, #D3D1D1  , rgba(239, 241, 253,0.2) );
+}
+

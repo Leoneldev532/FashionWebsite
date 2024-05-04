@@ -5,9 +5,12 @@ import boule3 from "@/../public/boule3.png";
 import clinthos from "@/../public/clinthos.png";
 import franceColortotothe from "@/../public/franceColortotothe.png";
 import frenchdrap from "@/../public/frenchdrap.png";
+import grad from "@/../public/grad.png";
 import greentotothe from "@/../public/greentotothe.png";
+import tottes from "@/../public/image.png";
 import joueur2 from "@/../public/joueur2.png";
 import limetothe from "@/../public/limetothe.png";
+import logo2 from "@/../public/logo 2.png";
 import muti3totothe from "@/../public/muti3totothe.png";
 import mutil2totothe from "@/../public/mutil2totothe.png";
 import pinktotothe from "@/../public/pinktotothe.png";
@@ -24,13 +27,17 @@ export default function Home() {
   return (
    <div className="flex flex-col gap-y-4   w-full relative">
 
-    <section className="relative w-full">
-        <div className=" w-full z-0">
+    <section className="relative w-full flex justify-start flex-col items-start ">
+        <div className=" w-full flex absolute bgherosection justify-center items-center z-0">
+
+        <Image src={tottes} className="object-contain pt-4 w-full h-[65rem] " alt="photo1" />
+
+
         </div>
-        <div className=" w-full    flex flex-col min-h-[70vh] justify-end items-center">
+        <div className=" w-full    flex flex-col relative z-20  min-h-[80vh] justify-start  items-center">
 
             <div className="flex justify-center   items-center flex-col gap-y-4">
-                <h4 className="text-2xl tartuffor   text-custom-marron">the french tototte</h4>
+                <h4 className="text-2xl tartuffor  bg-red-500  text-custom-marron">the french tototte</h4>
             </div>
 
         </div>
@@ -59,7 +66,7 @@ export default function Home() {
         <rect x={16} width={8} height={6} fill="#F73C53" />
         </svg>
 
-        <h2 className="text-7xl text-custom-marron  z-20 tartuffor max-w-xl text-center">
+        <h2 className="text-8xl text-custom-marron text-balance  z-20 tartuffor  max-w-5xl text-center">
         pour ceux qui osent être différents 
         </h2>
 
@@ -132,7 +139,7 @@ export default function Home() {
                 <div className="w-full  h-[21.54rem]  flex gap-x-4 justify-start items-center">
 
 
-    <div className="w-1/2 flex  relative flex-col h-full justify-start gap-y-4 overflow-hidden  rounded-lg border">
+    <div className="w-1/2 flex  bg-white relative flex-col h-full justify-start gap-y-4 overflow-hidden  rounded-lg border">
  <div className="w-full  absolute flex justify-start items-center ">
 
 <Image src={totothesfrance} className="object-contain w-full relative -top-4 " alt="photo1" />
@@ -232,9 +239,10 @@ Technologies de pointe offrant une expérience de suçotage révolutionnaire et 
 
         <div className="min-h-[30vh] relative flex w-full justify-center items-center ">
 
-        <Image src={redtotothes} className="object-contain relative  z-10 " alt="photo1" />
+        <Image src={redtotothes} className="object-contain relative  top-24 z-10 " alt="photo1" />
+        <Image src={grad} className="object-contain absolute  top-24 z-0" alt="photo1" />
 
-     
+ 
 
 
 
@@ -250,7 +258,7 @@ Technologies de pointe offrant une expérience de suçotage révolutionnaire et 
 
             <div className="flex flex-col h-full  justify-start  items-start    w-1/2  px-8  gap-y-5">
 
-                <h4 className="text-6xl text-balance max-w-sm text-custom-marron-dark">
+                <h4 className="text-7xl text-balance max-w-sm text-custom-marron-dark">
                 technologie plug’n’tote
                 </h4>
                 <p className=" text-balances text-left w-full text-lg  ">
@@ -353,7 +361,7 @@ Technologies de pointe offrant une expérience de suçotage révolutionnaire et 
 
 <div className="firstimage relative">
 
-<Image src={limetothe} className="object-contain  relative  " alt="photo1" />
+<Image src={limetothe} className="object-contain  relative h-56  " alt="photo1" />
 
 
 
@@ -379,7 +387,7 @@ Technologies de pointe offrant une expérience de suçotage révolutionnaire et 
                   <div className="w-1/2 flex justify-start items-center gap-x-24 ">
                   <div className="flex flex-col justify-start items-start text-left gap-y-6">
 
-                    <span className="text-6xl gustavom font-extrabold text-custom-marron-dark">
+                    <span className="text-7xl gustavom font-extrabold text-custom-marron-dark">
                     30
                     </span>
 
@@ -395,7 +403,7 @@ Technologies de pointe offrant une expérience de suçotage révolutionnaire et 
                   
                   <div className="flex flex-col justify-start items-start text-left gap-y-6">
 
-                    <b className="text-6xl gustavom  font-bold text-custom-marron-dark">
+                    <b className="text-7xl gustavom  font-bold text-custom-marron-dark">
                     11
                     </b>
 
@@ -464,7 +472,7 @@ soucis
  <div className=" w-full justify-start  items-end flex  flex-col  gap-y-5">
         <div className="w-1/2 px-8 justify-start items-start flex flex-col gap-y-5">
         <div className="flex flex-col justify-start gap-y-3 items-start">
-        <span className="text-6xl text-balance gustavob max-w-sm  font-extrabold text-custom-marron-dark">
+        <span className="text-7xl text-balance gustavob max-w-sm  font-extrabold text-custom-marron-dark">
            50 h
                 </span>
                 <span className="text-sm max-w-28 text-balance">
@@ -498,7 +506,7 @@ soucis
 
                   <div className="w-full pt-20    flex justify-start items-start">
 
-                    <div className="text-6xl w-1/2 px-8  text-custom-marron-dark flex justify-start items-start ">
+                    <div className="text-7xl w-1/2 px-8  text-custom-marron-dark flex justify-start items-start ">
                     <h2 className="max-w-xs ">suçotez vos titres préférés</h2>
                     </div>
 
@@ -555,7 +563,7 @@ Spotify Connect®
     <div className="flex flex-col gap-y-6 w-full ">
 
 
-  <h2 className="text-6xl text-custom-marron-dark text-balance text-custom-dark-marron max-w-sm">
+  <h2 className="text-7xl text-custom-marron-dark text-balance text-custom-dark-marron max-w-sm">
   le jus de
 mynthos
                     </h2>
@@ -588,7 +596,7 @@ Collaboration exclusive
             <section className=" pt-56  w-full justify-center items-center flex flex-col ">
                 <div className="w-6/12 flex-col flex justify-center gap-y-8 items-center">
 
-                  <h2 className="text-6xl text-custom-marron-dark max-w-sm text-balance text-center">ils ont suçoté,
+                  <h2 className="text-7xl text-custom-marron-dark max-w-sm text-balance text-center">ils ont suçoté,
 ils ont adoré</h2>
     <span className="text-lg  text-center max-w-lg text-balance">
     Nos totottes sont utilisées par les plus grands de ce monde et si vous voulez mon avis ce n’est pas un hasard
@@ -599,7 +607,7 @@ ils ont adoré</h2>
               <section className="flex gap-x-32 pt-28 justify-center items-center">
 
 
-                <div className="flex flex-col relative  left-[8%]  items-start justify-start  gap-y-6 ">
+                <div className="flex flex-col relative  left-[4%]  items-start justify-start  gap-y-6 ">
 
                   <div className="size-44 rounded-full overflow-hidden">
                         
@@ -638,7 +646,7 @@ ils ont adoré</h2>
                 </div>
 
 
-                <div className="flex flex-col relative top-36 left-[6%]  gap-y-6 ">
+                <div className="flex flex-col relative top-36 left-[5%]  gap-y-6 ">
 
 <div className="size-44 rounded-full overflow-hidden">
       
@@ -677,7 +685,7 @@ ils ont adoré</h2>
 </div>
 
 
-<div className="flex flex-col relative left-[3%] -top-20  gap-y-6 ">
+<div className="flex flex-col relative left-[5%] -top-20  gap-y-6 ">
 
 <div className="size-44 rounded-full overflow-hidden">
       
@@ -737,7 +745,7 @@ ils ont adoré</h2>
 
                     <div className="flex flex-col gap-y-8">
 
-                          <h3 className="text-6xl text-custom-marron-dark "> personnalisez votre tototte </h3>
+                          <h3 className="text-7xl text-custom-marron-dark "> personnalisez votre tototte </h3>
                           <span className="text-lg text-balance">Vous allez créer la tototte idéale pour vous.
 À chacun son expérience, à chacun sa tototte.</span>
 
@@ -746,7 +754,7 @@ ils ont adoré</h2>
 
                     <div className="flex flex-col gap-y-8">
 
-<h3 className="text-6xl text-custom-marron-dark "> finition</h3>
+<h3 className="text-7xl text-custom-marron-dark "> finition</h3>
 <span className="text-lg text-balance">Choisissez votre favorite</span>
 
 <div className="flex justify-start w-full items-center gap-x-4">
@@ -775,7 +783,7 @@ ils ont adoré</h2>
 
 <div className="flex flex-col gap-y-8">
 
-<h3 className="text-6xl text-custom-marron-dark "> ornement</h3>
+<h3 className="text-7xl text-custom-marron-dark "> ornement</h3>
 <span className="text-lg text-balance">Choisissez votre pierre précieuse</span>
 
 <div className="flex justify-start w-full items-center gap-x-4">
@@ -806,7 +814,7 @@ ils ont adoré</h2>
 
 
 
-<h3 className="text-6xl text-custom-marron-dark "> pack saveur</h3>
+<h3 className="text-7xl text-custom-marron-dark "> pack saveur</h3>
 <span className="text-lg text-balance">Choisissez votre pack de saveurs</span>
 
 <div className="flex justify-start flex-col gap-y-2 w-full items-center gap-x-4">
@@ -853,7 +861,7 @@ ils ont adoré</h2>
               </section>
 
               <footer className="w-full py-20 flex flex-col justify-start items-start relative min-h-[61rem] bg-custom-marron-dark">
-              <div className="w-full flex gap-x-20 justify-start items-start">
+              <div className="w-full flex gap-x-20 relative z-10 justify-start items-start">
               <div className="w-7/12 flex justify-end items-center">
 
 <div className="rounded-lg w-10/12 bg-white min-h-[35rem] ">
@@ -865,7 +873,7 @@ ils ont adoré</h2>
 </div>
 
                 
-<div className="w-3/12 flex flex-col gap-y-12   text-custom-white justify-start items-start">
+<div className="w-3/12 flex flex-col gap-y-12 relative z-10   text-custom-white justify-start items-start">
 
       <div className="flex gap-y-2 flex-col w-full">
         <h4 className="text-4xl">votre panier est prêt</h4>
@@ -974,10 +982,11 @@ tototte store  Lille
 </div>
 </div>
 
-<div className="flex w-full justify-between items-center">
+<div className="flex w-full relative z-10 justify-between px-44 items-center">
         <div className="flex gap-y-1">
 
-          <div className="w-full flex gap-x-0.5">
+          <div className="w-full flex-col gap-y-4 flex justify-start items-center gap-x-3">
+            <div className="w-full flex gap-x-3">
           <Link href="/">
           <svg
   width={20}
@@ -1018,7 +1027,7 @@ tototte store  Lille
   xmlns="http://www.w3.org/2000/svg"
 >
   <path
-    d="M10 15L15.19 12L10 9V15ZM21.56 7.17C21.69 7.64 21.78 8.27 21.84 9.07C21.91 9.87 21.94 10.56 21.94 11.16L22 12C22 14.19 21.84 15.8 21.56 16.83C21.31 17.73 20.73 18.31 19.83 18.56C19.36 18.69 18.5 18.78 17.18 18.84C15.88 18.91 14.69 18.94 13.59 18.94L12 19C7.81 19 5.2 18.84 4.17 18.56C3.27 18.31 2.69 17.73 2.44 16.83C2.31 16.36 2.22 15.73 2.16 14.93C2.09 14.13 2.06 13.44 2.06 12.84L2 12C2 9.81 2.16 8.2 2.44 7.17C2.69 6.27 3.27 5.69 4.17 5.44C4.64 5.31 5.5 5.22 6.82 5.16C8.12 5.09 9.31 5.06 10.41 5.06L12 5C16.19 5 18.8 5.16 19.83 5.44C20.73 5.69 21.31 6.27 21.56 7.17Z"
+    d="M16.7049 11.108C16.5429 8.121 14.9109 6.411 12.1709 6.394C10.5189 6.384 9.13785 7.084 8.29185 8.367L9.79985 9.4C10.4339 8.439 11.4349 8.24 12.1599 8.247C13.0629 8.253 13.7429 8.515 14.1839 9.027C14.5039 9.399 14.7189 9.914 14.8259 10.563C14.0259 10.427 13.1599 10.385 12.2359 10.438C9.62985 10.588 7.95585 12.108 8.06785 14.219C8.12485 15.29 8.65785 16.212 9.56985 16.814C10.3399 17.323 11.3339 17.571 12.3649 17.515C13.7279 17.44 14.7969 16.921 15.5429 15.97C16.1089 15.248 16.4669 14.312 16.6249 13.134C17.2749 13.526 17.7549 14.041 18.0219 14.661C18.4739 15.715 18.4999 17.447 17.0869 18.859C15.8489 20.095 14.3609 20.631 12.1119 20.647C9.61685 20.629 7.72985 19.828 6.50385 18.269C5.35385 16.809 4.76085 14.699 4.73885 12C4.76085 9.3 5.35485 7.191 6.50385 5.73C7.72985 4.171 9.61685 3.371 12.1119 3.353C14.6249 3.372 16.5439 4.175 17.8179 5.743C18.4429 6.511 18.9129 7.477 19.2239 8.603L20.9899 8.133C20.6129 6.746 20.0209 5.551 19.2159 4.56C17.5829 2.55 15.1829 1.521 12.1059 1.5C9.03485 1.521 6.67385 2.555 5.08685 4.571C3.67585 6.366 2.94685 8.877 2.92285 12.007C2.94685 15.137 3.67585 17.634 5.08685 19.429C6.67385 21.445 9.04685 22.479 12.1169 22.5C14.8479 22.481 16.7719 21.766 18.3569 20.183C20.4319 18.11 20.3689 15.513 19.6859 13.919C19.1609 12.694 18.1159 11.713 16.7059 11.109M12.2679 15.666C11.1259 15.73 9.93985 15.218 9.88085 14.12C9.83785 13.306 10.4609 12.398 12.3379 12.29C13.1862 12.233 14.0383 12.2916 14.8709 12.464C14.6549 15.166 13.3859 15.604 12.2679 15.666Z"
     fill="#816A6C"
   />
 </svg>
@@ -1059,10 +1068,26 @@ tototte store  Lille
 
 
 
-</Link>
-          </div>
+</Link>   </div>
+<div className="w-full flex justify-start items-center gap-x-4">
+<h3 className="text-4xl">
+the french tototte
+</h3>
+<span className="text-sm tex-balance w-8/12">
+Copyright © 2024 TheFrenchTototte. Tous droits réservés  — Utilisation des cookies — Mention légales.
+Sur une idée originale d’Antoine Daniel, concept art par Tera Silver, 3D par Aurélien Thomas, logo par Baloprisonnier, 3D print par Lunath & Packaging par Illusion
+</span>
+</div>
+          </div> 
 
         </div>
+</div>
+
+<div className="flex h-full absolute z-0   justify-end  items-end">
+
+<Image src={logo2} className="object-contain  h-[54rem] top-16 -left-10 relative  " alt="photo1" />
+
+
 </div>
 
               </footer>
