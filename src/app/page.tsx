@@ -25,7 +25,7 @@ import Image from "next/image";
 import Link from "next/link";
 export default function Home() {
   return (
-   <div className="flex flex-col gap-y-4   w-full relative">
+   <div className="flex flex-col   w-full relative">
 
     <section className="relative w-full flex justify-start flex-col items-start ">
         <div className=" w-full flex absolute bgherosection justify-center items-center z-0">
@@ -34,10 +34,10 @@ export default function Home() {
 
 
         </div>
-        <div className=" w-full    flex flex-col relative z-20  min-h-[80vh] justify-start  items-center">
+        <div className=" w-full    flex flex-col relative z-20  min-h-[82vh]  justify-end items-center">
 
-            <div className="flex justify-center   items-center flex-col gap-y-4">
-                <h4 className="text-2xl tartuffor  bg-red-500  text-custom-marron">the french tototte</h4>
+            <div className="flex justify-center   items-end flex-col gap-y-4">
+                <h4 className="text-2xl tartuffor    text-custom-marron pb-4">the french tototte</h4>
             </div>
 
         </div>
