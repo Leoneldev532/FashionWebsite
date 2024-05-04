@@ -26,3 +26,124 @@ body {
     text-wrap: balance;
   }
 }
+
+@font-face {
+  font-family: "gustavom" ;
+  src: url("../../public/font/Gustavo_trial-Medium-BF65f254e1e1a08.otf");
+}
+@font-face {
+  font-family: "gustavor" ;
+  src: url("../../public/font/Gustavo_trial-Regular-BF65f254e22bb0e.otf");
+}
+@font-face {
+  font-family: "gustavob" ;
+  src: url("../../public/font/Gustavo_trial-Bold-BF65f254e21d829.otf");
+}
+
+
+.gustavom{
+  font-family: "gustavom" ;
+}
+.gustavor{
+  font-family: "gustavor" ;
+}
+.gustavorb{
+  font-family: "gustavob" ;
+}
+
+@font-face {
+  font-family: "tartuffob" ;
+  src: url("../../public/font/Tartuffo_Trial-Bold-BF643371dae156a.otf");
+}
+
+@font-face {
+  font-family: "tartuffom" ;
+  src: url("../../public/font/Tartuffo_Trial-Medium-BF643371daee2ec.otf");
+}
+
+@font-face {
+  font-family: "tartuffor" ;
+  src: url("../../public/font/Tartuffo_Trial-Regular-BF643371db1355b.otf");
+}
+
+body{
+  background-repeat: no-repeat;
+  /* background-image: url("../../public/Layoutbg.svg"); */
+}
+
+
+.tartuffor{
+  font-family:"tartuffor" ;
+}
+.tartuffom{
+  font-family:"tartuffom" ;
+}
+.tartuffob{
+  font-family:"tartuffob" ;
+}
+
+span,p,button{
+  font-family:"gustavom" ;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family:"tartuffor" ;
+}
+
+
+
+.firstcardbg{
+    
+  background-image: linear-gradient(180deg, white, #EFF1FD);
+}
+
+.bgcard4{
+  background-image: linear-gradient(180deg, white, #EBE0D8);
+}
+
+.bgcard6{
+  
+  background:  #EBE0D8;
+}
+
+.bgsectechno{
+  width: 100%;
+  background-size: cover;
+  background-image: radial-gradient(circle at top, #D4C2B8 5%, rgba(212, 194, 184, 0.005) 60%);
+
+}
+
+.bgspotify{
+  
+  background-image: linear-gradient(180deg, transparent, #EBE0D8  ,transparent );
+}
+
+.bgboule1{
+  
+  background-image: linear-gradient(-47deg, #FFE7DB 0%, #EECDBF  100% );
+  
+}
+
+
+.bgboule2{
+  
+  background-image: linear-gradient(47deg, #DBF2FF, #BFC7EE   );
+  
+}
+
+.bgboule3{
+  
+  background-image: linear-gradient(47deg, #F6F6F6, #D8D8D8   );
+  
+}
+
+.bgboule4{
+  
+  background-image: linear-gradient(47deg, #99969F, #484848   );
+  
+}
+
+.bgcarou{
+  
+  background-image: linear-gradient(180deg, rgba(239, 241, 253,0.2) 5%,#EFF1FD 20%, #EFF1FD  70% );
+}

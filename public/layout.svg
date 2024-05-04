@@ -1,0 +1,19 @@
+<svg
+  width={1440}
+  height={437}
+  viewBox="0 0 1440 437"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <g clipPath="url(#clip0_44_665)">
+    <rect y="-55.5508" width={360} height="548.102" stroke="#3E4451" />
+    <rect x={360} y="-55.5508" width={360} height="548.102" stroke="#3E4451" />
+    <rect x={720} y="-55.5508" width={360} height="548.102" stroke="#3E4451" />
+    <rect x={1080} y="-55.5508" width={360} height="548.102" stroke="#3E4451" />
+  </g>
+  <defs>
+    <clipPath id="clip0_44_665">
+      <rect width={1440} height={437} fill="white" />
+    </clipPath>
+  </defs>
+</svg>

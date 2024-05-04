@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from "../../Components/header";
+import Header from "./Components/header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,10 +17,76 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className + "flex flex-col justify-center items-center"}>
-        <div className="flex flex-col justify-center items-center">
+      <meta charSet="utf-8"/>
+      <body className={inter.className + "flex text-custom-light-marron bg-custom-white  flex-col justify-center items-center"}>
+        <div className="flex w-full flex-col justify-center items-center">
         <Header />
+        <div className="relative flex justify-center w-full items-center">
+          <div className="absolute top-0 left-0 z-0 w-full">
+
+          <svg
+  width={1450}
+  height={10368}
+  viewBox="0 0 1450 10368"
+  fill="none"
+  className="w-full h-full"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <g
+    style={{ mixBlendMode: "difference" }}
+    opacity="0.1"
+    filter="url(#filter0_d_44_668)"
+  >
+    <rect x={5} y="-1168.35" width={360} height="11527.7" stroke="#3E4451" />
+    <rect x={365} y="-1168.35" width={360} height="11527.7" stroke="#3E4451" />
+    <rect x={725} y="-1168.35" width={360} height="11527.7" stroke="#3E4451" />
+    <rect x={1085} y="-1168.35" width={360} height="11527.7" stroke="#3E4451" />
+  </g>
+  <defs>
+    <filter
+      id="filter0_d_44_668"
+      x="0.5"
+      y="-1168.85"
+      width={1449}
+      height="11536.7"
+      filterUnits="userSpaceOnUse"
+      colorInterpolationFilters="sRGB"
+    >
+      <feFlood floodOpacity={0} result="BackgroundImageFix" />
+      <feColorMatrix
+        in="SourceAlpha"
+        type="matrix"
+        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+        result="hardAlpha"
+      />
+      <feOffset dy={4} />
+      <feGaussianBlur stdDeviation={1} />
+      <feComposite in2="hardAlpha" operator="out" />
+      <feColorMatrix
+        type="matrix"
+        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+      />
+      <feBlend
+        mode="normal"
+        in2="BackgroundImageFix"
+        result="effect1_dropShadow_44_668"
+      />
+      <feBlend
+        mode="normal"
+        in="SourceGraphic"
+        in2="effect1_dropShadow_44_668"
+        result="shape"
+      />
+    </filter>
+  </defs>
+</svg>
+
+          </div>
+          <div className="relative flex w-full  justify-center items-center z-0">
         {children}
+
+        </div>
+        </div>
         </div>
         </body>
    
