@@ -1,17 +1,31 @@
+
+"use client"
 import Etoiles from "@/../public/Etoiles.png";
 import baghera from "@/../public/baghera.png";
 import barretotothe from "@/../public/barretotothe.png";
 import boule3 from "@/../public/boule3.png";
+
+
+import logo from "@/../public/logo.png"
 import clinthos from "@/../public/clinthos.png";
 import franceColortotothe from "@/../public/franceColortotothe.png";
 import frenchdrap from "@/../public/frenchdrap.png";
 import grad from "@/../public/grad.png";
 import greentotothe from "@/../public/greentotothe.png";
 import tottes from "@/../public/image.png";
+import btn from "@/../public/btn 4.svg"
+import btn2 from "@/../public/btn.svg"
+import btn3 from "@/../public/btn 8.svg"
+import btn4 from "@/../public/btn 7.svg"
+import btn5 from "@/../public/btn 8.svg"
+import btn9 from "@/../public/btn 9.svg"
+import btn6 from "@/../public/btn2.svg"
+import btn1 from "@/../public/btn1.svg"
 import joueur2 from "@/../public/joueur2.png";
 import limetothe from "@/../public/limetothe.png";
 import logo2 from "@/../public/logo 2.png";
 import muti3totothe from "@/../public/muti3totothe.png";
+import multi1totothe from "@/../public/multi1totothe.png";
 import mutil2totothe from "@/../public/mutil2totothe.png";
 import pinktotothe from "@/../public/pinktotothe.png";
 import radialgrad from "@/../public/radialgrad.png";
@@ -21,17 +35,165 @@ import totote from "@/../public/totote.png";
 import totothesfrance from "@/../public/totothefrance gradient.png";
 import totothes from "@/../public/totothes.png";
 import totothess from "@/../public/totothess.png";
+import gradientfrance from "@/../public/gradientfrance.png";
+import image1 from "@/../public/1.png";
+import image2 from "@/../public/2.png";
+import image3 from "@/../public/3.png";
+import image4 from "@/../public/4.png";
+import image5 from "@/../public/5.png";
+import image6 from "@/../public/6.png";
+import image7 from "@/../public/7.png";
+import image8 from "@/../public/8.png";
+import image9 from "@/../public/9.png";
+import ombre from "@/../public/Ombre.png";
 import Image from "next/image";
 import Link from "next/link";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap/all";
+import videototothe from "@/../public/videototote.gif"
+import  { ScrollTrigger } from "gsap/ScrollTrigger"
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import { useState,useEffect } from "react";
 export default function Home() {
+  gsap.registerPlugin(ScrollTrigger);
+
+
+
+  const [isScrollOk,setIscrollOk] = useState(false)
+
+
+
+
+  const [state,setState] = useState("option1")
+
+  useGSAP(() => {
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".rotatetotote",
+        start: "top 70%", 
+        end: "bottom  50%",   
+        toggleActions: "play reverse reverse reverse",
+        scrub: 4,
+        markers: true
+      }
+    });
+
+    tl.to(".rotatetotote", {
+      rotate: "40deg",
+      transformOrigin :"50% 40%",
+      duration: 0.5,
+     
+    });
+
+    const rl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".pincarou",
+        
+        scrub: true,
+        start:"top top",
+        end:"+=2400",
+        pin:true,
+        markers: true
+      }
+    });
+
+    rl.to(".pincarou", {
+
+      pin: true, 
+      pinSpacing: true 
+    });
+
+    
+
+
+
+  });
+
+
+  useEffect(() => {
+    const handleScroll = (e:any) => {
+      if (window.scrollY  > 400) {  
+        setIscrollOk(true);
+      }else{
+        setIscrollOk(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  },[]); 
+
+
+
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 1,
+      slidesToSlide: 1 
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+      slidesToSlide: 2 
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+      slidesToSlide: 1 
+    }
+  };
+
   return (
    <div className="flex flex-col   w-full relative">
+   <header className={`w-full flex justify-between  h-16 ${isScrollOk ? "gradientTopbarre" :"bg-transparent" }   fixed z-[999]  py-16 px-12 items-center` }>
 
+<Image src={logo} alt="logo" className={"object-contain h-8 w-8 "} />
+<Link href="/"><button className="bg-custom-marron group relative overflow-hidden flex justify-center w-36 h-12 items-center text-white px-8 gustavor text-lg  py-2"> 
+
+
+<div className="flex absolute opacity-80 z-0   -rotate-12 -left-[120%] group-hover:left-[150%] transition-all ease duration-700 w-40">
+
+<div className="h-36 w-24 parallelogramme bg-[#0066FF] ">
+
+
+</div>
+<div className="h-36 w-24 parallelogramme bg-[#0007AF] ">
+
+
+</div>
+
+    <div className="h-36 w-24 parallelogramme bg-[#C40018] ">
+
+
+    </div>
+    <div className="h-36 w-24 parallelogramme bg-[#FF5A5A] ">
+
+
+</div>
+
+
+</div>
+
+<span className="absolute z-10">Acheter</span>
+
+</button> </Link>
+</header>
     <section className="relative w-full flex justify-start flex-col items-start ">
-        <div className=" w-full flex absolute bgherosection justify-center items-center z-0">
+        <div className=" w-full flex absolute  justify-center items-center z-0">
 
-        <Image src={tottes} className="object-contain pt-4 w-full h-[65rem] " alt="photo1" />
+          <div className="absolute z-30 h-full w-full bgherosection">
 
+
+          </div>
+
+        {/* <Image src={tottes} className="object-contain pt-4 w-full h-[65rem] " alt="photo1" /> */}
+        <video width="720" height="240" muted className="w-full h-full" autoPlay  preload="none">
+      <source src="./herovideo.mp4" className="w-full h-full" type="video/mp4" />
+    
+    </video>
 
         </div>
         <div className=" w-full    flex flex-col relative z-20  min-h-[82vh]  justify-end items-center">
@@ -66,13 +228,14 @@ export default function Home() {
         <rect x={16} width={8} height={6} fill="#F73C53" />
         </svg>
 
-        <h2 className="text-8xl text-custom-marron text-balance  z-20 tartuffor  max-w-5xl text-center">
-        pour ceux qui osent être différents 
-        </h2>
+        <div className="text-8xl textanimer text-custom-marron text-balance  z-20 tartuffor  max-w-5xl text-center">
+          <h2 className=""> pour ceux qui osent être différents      </h2>
+        </div>
 
       <div className="relative z-10 flex flex-col justify-center items-center ">
-       <Link href="/" className="relative" >
-        <button className="text-lg  py-7"> decouvrir </button>
+       <Link href="/" className="relative group justify-center items-center flex flex-col gap-y-1" >
+        <button className="text-lg  py-6"> decouvrir </button>
+        <div className="w-0 group-hover:w-16 h-[0.2px] transformline bg-custom-marron-dark transition-all ease duration-500 "> </div>
         </Link> 
 
         <svg width="2" height="400" className="relative" viewBox="0 0 2 400" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -142,7 +305,8 @@ export default function Home() {
     <div className="w-1/2 flex  group bg-white relative flex-col h-full justify-start gap-y-4 overflow-hidden  rounded-lg border">
  <div className="w-full  absolute flex justify-start items-center ">
         <div className="w-full bgfrancetotote flex h-[9rem] justify-center items-center">
-<Image src={totothesfrance} className="object-contain relative transform group-hover:-rotate-12 transition-all ease duration-500 group-hover:scale-125  " alt="photo1" />
+<Image src={totothesfrance} className="object-contain relative transform group-hover:-rotate-12 pt-10 transition-all ease duration-500 group-hover:scale-125  " alt="photo1" />
+<Image src={gradientfrance} className="object-contain absolute opacity-0 group-hover:opacity-100 transition-all ease duration-500 w-full " alt="photo2" />
 </div>
 </div>
 
@@ -239,10 +403,10 @@ Technologies de pointe offrant une expérience de suçotage révolutionnaire et 
 
         <div className="min-h-[30vh] relative flex w-full justify-center items-center ">
 
-        <Image src={redtotothes} className="object-contain relative  top-24 z-10 " alt="photo1" />
-        <Image src={grad} className="object-contain absolute  top-24 z-0" alt="photo1" />
+        <Image src={videototothe} className="object-contain absolute  h-[34rem]  -top-10 z-10 " alt="photo1" />
+        <Image src={grad} className="object-contain absolute  -top-16 z-0" alt="photo1" />
 
- 
+
 
 
 
@@ -285,8 +449,10 @@ Technologies de pointe offrant une expérience de suçotage révolutionnaire et 
             </div>
 
             <div className="relative z-10 flex flex-col justify-center items-center ">
-       <Link href="/" className="relative" >
+       <Link href="/" className="relative flex-col  group flex justify-center items-center" >
         <button className="text-lg  py-7"> Découvrir les saveurs </button>
+        <div className="w-0 group-hover:w-16 h-[0.2px] transformline bg-custom-marron-dark transition-all ease duration-500 "> </div>
+      
         </Link> 
 
         <svg width="2" height="400" className="relative" viewBox="0 0 2 400" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -308,7 +474,7 @@ Technologies de pointe offrant une expérience de suçotage révolutionnaire et 
 
       <section className=" flex flex-col ">
 
-        <div className="flex flex-col w-full gap-y-28">
+        <div className="flex  flex-col w-full gap-y-28">
 
             <div className="flex flex-col relative  justify-center items-center w-full">
 
@@ -320,60 +486,248 @@ Technologies de pointe offrant une expérience de suçotage révolutionnaire et 
 
                 </div>
 
-                <div className="firstimage relative ">
+ <div className="firstimage   group relative ">
 
-                <Image src={redTotothe} className="object-fill  relative    " alt="photo1" />
+                <Image src={redTotothe} className="object-fill  relative  translate-y-0 group-hover:-translate-y-4 transition-all ease duration-500 " alt="photo1" />
 
+                <Image src={ombre} className="object-fill absolute  scale-0 group-hover:scale-100  left-2 top-[95%]  transition-all ease duration-500 " alt="photo1" />
+
+                
+          <div className="absolute z-20  left-[20%]  -top-[85%] linetrans group-hover:opacity-100 opacity-100 transition-all ease duration-300 group-hover:scale-100 scale-0  ">
+
+<div className="w-56 h-28 flex relative  border flex-col border-custom-marron-dark p-3  flex-wrap ">
+<span className="text-4xl absolute top-[7.5rem]  left-[14.65%] text-black">.</span>
+    <div className="border-r h-12 rotate-[20deg]  absolute  left-[20%] top-[98.25%] border-custom-marron-dark">
+
+
+    </div>
+
+  <h4 className="font-bold text-2xl"> Fraise </h4>
+  <span className="text-sm">
+    une fraise francaise  cueillie dans nos cheres  regions
+  </span>
+
+</div>
+
+
+        </div>
 
 
                 </div>
 
-                <div className="firstimage relative">
-
-<Image src={greentotothe} className="object-contain h-40  relative  " alt="photo1" />
 
 
 
-</div>
+<div className="firstimage   group relative ">
 
-<div className="firstimage relative">
+<Image src={greentotothe} className="object-fill  relative  translate-y-0 group-hover:-translate-y-4 transition-all ease duration-500 " alt="photo1" />
 
-<Image src={pinktotothe} className="object-contain h-40  relative  " alt="photo1" />
+<Image src={ombre} className="object-fill absolute  scale-0 group-hover:scale-100  left-2 top-[95%]  transition-all ease duration-500 " alt="photo1" />
 
 
+<div className="absolute z-20  left-[20%]  -top-[85%] linetrans group-hover:opacity-100 opacity-100 transition-all ease duration-300 group-hover:scale-100 scale-0  ">
 
-</div>
-<div className="firstimage relative">
-
-<Image src={mutil2totothe} className="object-contain h-40  relative  " alt="photo1" />
-
+<div className="w-56 h-28 flex relative  border flex-col border-custom-marron-dark p-3  flex-wrap ">
+<span className="text-4xl absolute top-[7.5rem]  left-[14.65%] text-black">.</span>
+<div className="border-r h-12 rotate-[20deg]  absolute  left-[20%] top-[98.25%] border-custom-marron-dark">
 
 
 </div>
 
-<div className="firstimage relative">
+<h4 className="font-bold text-2xl"> Fraise </h4>
+<span className="text-sm">
+une fraise francaise  cueillie dans nos cheres  regions
+</span>
 
-<Image src={franceColortotothe} className="object-contain  relative  " alt="photo1" />
-
+</div>
 
 
 </div>
 
-<div className="firstimage relative">
 
-<Image src={limetothe} className="object-contain  relative h-56  " alt="photo1" />
+</div>
 
+
+
+<div className="firstimage   group relative ">
+
+<Image src={pinktotothe} className="object-fill  relative  translate-y-0 group-hover:-translate-y-4 transition-all ease duration-500 " alt="photo1" />
+
+<Image src={ombre} className="object-fill absolute  scale-0 group-hover:scale-100  left-2 top-[95%]  transition-all ease duration-500 " alt="photo1" />
+
+
+<div className="absolute z-20  left-[20%]  -top-[85%] linetrans group-hover:opacity-100 opacity-100 transition-all ease duration-300 group-hover:scale-100 scale-0  ">
+<span className="text-4xl absolute top-[7.5rem]  left-[14.65%] text-black">.</span>
+<div className="w-56 h-28 flex relative  border flex-col border-custom-marron-dark p-3  flex-wrap ">
+
+<div className="border-r h-12 rotate-[20deg]  absolute  left-[20%] top-[98.25%] border-custom-marron-dark">
 
 
 </div>
 
-<div className="firstimage relative">
+<h4 className="font-bold text-2xl"> Fraise </h4>
+<span className="text-sm">
+une fraise francaise  cueillie dans nos cheres  regions
+</span>
 
-<Image src={muti3totothe} className="object-contain  relative  " alt="photo1" />
-
+</div>
 
 
 </div>
+
+
+</div>
+
+
+
+<div className="firstimage   group relative ">
+
+<Image src={multi1totothe} className="object-fill  relative  translate-y-0 group-hover:-translate-y-4 transition-all ease duration-500 " alt="photo1" />
+
+<Image src={ombre} className="object-fill absolute  scale-0 group-hover:scale-100  left-2 top-[95%]  transition-all ease duration-500 " alt="photo1" />
+
+
+<div className="absolute z-20  left-[20%]  -top-[85%] linetrans group-hover:opacity-100 opacity-100 transition-all ease duration-300 group-hover:scale-100 scale-0  ">
+<span className="text-4xl absolute top-[7.5rem]  left-[14.65%] text-black">.</span>
+<div className="w-56 h-28 flex relative  border flex-col border-custom-marron-dark p-3  flex-wrap ">
+
+<div className="border-r h-12 rotate-[20deg]  absolute  left-[20%] top-[98.25%] border-custom-marron-dark">
+
+
+</div>
+
+<h4 className="font-bold text-2xl"> Fraise </h4>
+<span className="text-sm">
+une fraise francaise  cueillie dans nos cheres  regions
+</span>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+<div className="firstimage   group relative ">
+
+<Image src={mutil2totothe} className="object-fill  relative  translate-y-0 group-hover:-translate-y-4 transition-all ease duration-500 " alt="photo1" />
+
+<Image src={ombre} className="object-fill absolute  scale-0 group-hover:scale-100  left-2 top-[95%]  transition-all ease duration-500 " alt="photo1" />
+
+
+<div className="absolute z-20  left-[20%]  -top-[85%] linetrans group-hover:opacity-100 opacity-100 transition-all ease duration-300 group-hover:scale-100 scale-0  ">
+<span className="text-4xl absolute top-[7.5rem]  left-[14.65%] text-black">.</span>
+<div className="w-56 h-28 flex relative  border flex-col border-custom-marron-dark p-3  flex-wrap ">
+
+<div className="border-r h-12 rotate-[20deg]  absolute  left-[20%] top-[98.25%] border-custom-marron-dark">
+
+
+</div>
+
+<h4 className="font-bold text-2xl"> Fraise </h4>
+<span className="text-sm">
+une fraise francaise  cueillie dans nos cheres  regions
+</span>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+<div className="firstimage   group relative ">
+
+<Image src={franceColortotothe} className="object-fill  relative  translate-y-0 group-hover:-translate-y-4 transition-all ease duration-500 " alt="photo1" />
+
+<Image src={ombre} className="object-fill absolute  scale-0 group-hover:scale-100  left-2 top-[95%]  transition-all ease duration-500 " alt="photo1" />
+
+
+<div className="absolute z-20  left-[20%]  -top-[85%] linetrans group-hover:opacity-100 opacity-100 transition-all ease duration-300 group-hover:scale-100 scale-0  ">
+<span className="text-4xl absolute top-[7.5rem]  left-[14.65%] text-black">.</span>
+<div className="w-56 h-28 flex relative  border flex-col border-custom-marron-dark p-3  flex-wrap ">
+
+<div className="border-r h-12 rotate-[20deg]  absolute  left-[20%] top-[98.25%] border-custom-marron-dark">
+
+
+</div>
+
+<h4 className="font-bold text-2xl"> Fraise </h4>
+<span className="text-sm">
+une fraise francaise  cueillie dans nos cheres  regions
+</span>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+<div className="firstimage   group relative ">
+
+<Image src={limetothe} className="object-fill  relative  translate-y-0 group-hover:-translate-y-4 transition-all ease duration-500 " alt="photo1" />
+
+<Image src={ombre} className="object-fill absolute  scale-0 group-hover:scale-100  left-2 top-[95%]  transition-all ease duration-500 " alt="photo1" />
+
+
+<div className="absolute z-20  left-[20%]  -top-[85%] linetrans group-hover:opacity-100 opacity-100 transition-all ease duration-300 group-hover:scale-100 scale-0  ">
+<span className="text-4xl absolute top-[7.5rem]  left-[14.65%] text-black">.</span>
+<div className="w-56 h-28 flex relative  border flex-col border-custom-marron-dark p-3  flex-wrap ">
+
+<div className="border-r h-12 rotate-[20deg]  absolute  left-[20%] top-[98.25%] border-custom-marron-dark">
+
+
+</div>
+
+<h4 className="font-bold text-2xl"> Fraise </h4>
+<span className="text-sm">
+une fraise francaise  cueillie dans nos cheres  regions
+</span>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+<div className="firstimage   group relative ">
+
+<Image src={muti3totothe} className="object-fill  relative  translate-y-0 group-hover:-translate-y-4 transition-all ease duration-500 " alt="photo1" />
+
+<Image src={ombre} className="object-fill absolute  scale-0 group-hover:scale-100  left-2 top-[95%]  transition-all ease duration-500 " alt="photo1" />
+
+
+<div className="absolute z-20  left-[20%]  -top-[85%] linetrans group-hover:opacity-100 opacity-100 transition-all ease duration-300 group-hover:scale-100 scale-0  ">
+<span className="text-4xl absolute top-[7.5rem]  left-[14.65%] text-black">.</span>
+<div className="w-56 h-28 flex relative  border flex-col border-custom-marron-dark p-3  flex-wrap ">
+
+<div className="border-r h-12 rotate-[20deg]  absolute  left-[20%] top-[98.25%] border-custom-marron-dark">
+
+
+</div>
+
+<h4 className="font-bold text-2xl"> Fraise </h4>
+<span className="text-sm">
+une fraise francaise  cueillie dans nos cheres  regions
+</span>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
 
 
 
@@ -443,9 +797,9 @@ Technologies de pointe offrant une expérience de suçotage révolutionnaire et 
       </section>
 
 
-      <section className=" h-auto pt-72 w-full justify-start items-center flex flex-col ">
-        <div className=" flex flex-col w-6/12 justify-start items-start ">
-        <div className=" px-8 max-w-sm flex flex-col gap-y-5">
+      <section className=" h-auto pt-72 w-full relative  justify-start items-center flex flex-col ">
+        <div className=" flex    flex-col w-6/12 justify-start items-start ">
+        <div className=" px-8  pb-96   max-w-sm flex flex-col gap-y-5">
 
         <h4 className="text-7xl text-balance max-w-14 text-custom-marron-dark">
         suçotez sans 
@@ -462,9 +816,9 @@ soucis
 
 
         </div>
-        <div className="w-full flex  relative  justify-center items-center">
+        <div className="w-full flex  absolute    left-0 justify-center items-center">
 
-<Image src={totote} className="object-contain relative h-[40rem] " alt="photo1" />
+<Image src={totote} className="object-contain rotatetotote  top-56 left-0 h-[50rem]  relative " alt="photo1" />
 
 
         </div>
@@ -499,7 +853,14 @@ soucis
 
               <div className="w-6/12  flex flex-col  py-56">
 
-                <div className="w-full rounded-lg border border-custom-marron  h-96 ">
+                <div className="w-full rounded-lg overflow-hidden border border-custom-marron  h-96 ">
+
+
+
+                    <video width="720" height="240" className="w-full h-full"   autoPlay  muted  preload="none">
+      <source src="./spotifyvideo.mp4" className="w-full h-full" type="video/mp4" />
+    
+    </video>
 
 
                   </div>
@@ -604,10 +965,10 @@ ils ont adoré</h2>
                 </div>
               </section>
 
-              <section className="flex gap-x-32 pt-28 justify-center items-center">
+              <section className="flex gap-x-32 pt-36 justify-center items-center">
 
-
-                <div className="flex flex-col relative  left-[4%]  items-start justify-start  gap-y-6 ">
+<div className="w-7/12 flex ">
+                <div className="flex flex-col relative  -left-[4%]  items-start justify-start  gap-y-6 ">
 
                   <div className="size-44 rounded-full overflow-hidden">
                         
@@ -646,7 +1007,7 @@ ils ont adoré</h2>
                 </div>
 
 
-                <div className="flex flex-col relative top-36 left-[5%]  gap-y-6 ">
+                <div className="flex flex-col relative top-36 left-[7%]  gap-y-6 ">
 
 <div className="size-44 rounded-full overflow-hidden">
       
@@ -685,7 +1046,7 @@ ils ont adoré</h2>
 </div>
 
 
-<div className="flex flex-col relative left-[5%] -top-20  gap-y-6 ">
+<div className="flex flex-col relative left-[15%] -top-20  gap-y-6 ">
 
 <div className="size-44 rounded-full overflow-hidden">
       
@@ -723,6 +1084,8 @@ ils ont adoré</h2>
 
 </div>
 
+</div>
+
               </section>
 
 
@@ -732,8 +1095,87 @@ ils ont adoré</h2>
 
                 <div className="w-7/12 flex justify-end items-center">
 
-                  <div className="rounded-lg w-10/12 bg-white min-h-[35rem] ">
+                  <div className="rounded-lg w-11/12 pincarou overflow-hidden flex justify-center items-center z-50  min-h-[35rem] ">
 
+                  
+                     <Carousel 
+
+// swipeable={true}
+// draggable={false}
+showDots={true}
+responsive={responsive}
+ssr={true} // means to render carousel on server-side.
+infinite={true}
+autoPlaySpeed={1000}
+keyBoardControl={true}
+customTransition="all .7"
+transitionDuration={500}
+containerClass="carousel-container"
+removeArrowOnDeviceType={["tablet", "mobile"]}
+dotListClass="custom-dot-list-style"
+// itemClass="carousel-item-padding-40-px"
+                     
+                     
+                     className="w-full carou rounded-xl overflow-hidden h-[45rem]" 
+  >
+                 
+                 
+                 
+                     <div className="w-full absolute z-40 min-h-[85rem] ">
+                   
+                    {state === "option1" ? 
+                    <Image src={image1}    alt="image 1" className="object-cover h-full w-full"    />
+                  
+                    : state === "option2" ? 
+                    
+                    <Image src={image4}    alt="image 1" className="object-cover h-full w-full"    />
+                  
+                    :
+                    <Image src={image7}    alt="image 1" className="object-cover h-full w-full"    />
+                  
+                  
+                    }
+               
+               
+               
+                    </div>
+                    
+                      <div className="w-full h-full ">
+                   
+                      {state === "option1" ? 
+                    <Image src={image2}    alt="image 1" className="object-cover h-full w-full"    />
+                  
+                    : state === "option2" ? 
+                    
+                    <Image src={image5}    alt="image 1" className="object-cover h-full w-full"    />
+                  
+                    :
+                    <Image src={image8}    alt="image 1" className="object-cover h-full w-full"    />
+                  
+                  
+                    }
+               
+                    
+                    </div>
+                    <div className="w-full h-full ">
+                    
+                   
+                    {state === "option1" ? 
+                    <Image src={image3}    alt="image 1" className="object-cover h-full w-full"    />
+                  
+                    : state === "option2" ? 
+                    
+                    <Image src={image6}    alt="image 1" className="object-cover h-full w-full"    />
+                  
+                    :
+                    <Image src={image9}    alt="image 1" className="object-cover h-full w-full"    />
+                  
+                  
+                    }
+               
+                    </div>
+                     </Carousel>
+                    
 
                   </div>
 
@@ -743,36 +1185,36 @@ ils ont adoré</h2>
                 
                 <div className="w-3/12 flex flex-col gap-y-32 justify-start items-start">
 
-                    <div className="flex flex-col gap-y-8">
+                    <div className="flex flex-col text-balance gap-y-8">
 
-                          <h3 className="text-7xl text-custom-marron-dark "> personnalisez votre tototte </h3>
+                          <h3 className="text-5xl text-custom-marron-dark "> personnalisez votre tototte </h3>
                           <span className="text-lg text-balance">Vous allez créer la tototte idéale pour vous.
 À chacun son expérience, à chacun sa tototte.</span>
 
                     </div>
 
 
-                    <div className="flex flex-col gap-y-8">
+                    <div className="flex flex-col gap-y-6">
 
-<h3 className="text-7xl text-custom-marron-dark "> finition</h3>
+<h3 className="text-5xl text-custom-marron-dark "> finition</h3>
 <span className="text-lg text-balance">Choisissez votre favorite</span>
 
 <div className="flex justify-start w-full items-center gap-x-4">
       
-      <button className="outline-offset-4 outline rounded-full">
-        <div className="size-10 rounded-full bgboule1 "></div>
+      <button onClick={()=>setState("option1")} className={`outline-offset-4  ${state === "option1" && "outline"} rounded-full`}>
+        <Image src={btn2}  alt="btn" className="h-full w-full object-cover"  />
       </button>
 
-      <button className="  rounded-full">
-        <div className="size-10 rounded-full bgboule2  "></div>
+      <button onClick={()=>setState("option2")}  className={`outline-offset-4  ${state === "option2" && "outline"} rounded-full`}>
+        <Image src={btn1}  alt="btn" className="h-full w-full object-cover"  />
       </button>
 
-      <button className="  rounded-full">
-        <div className="size-10 rounded-full bgboule3  "></div>
+      <button onClick={()=>setState("option3")}   className={`outline-offset-4   rounded-full`} >
+        <Image src={btn6}  alt="btn" className="h-full w-full object-cover"  />
       </button>
 
-      <button className="  rounded-full">
-        <div className="size-10 rounded-full bgboule4  "></div>
+      <button onClick={()=>setState("option3")}  className={`outline-offset-4  ${state === "option3" && "outline"} rounded-full`}>
+        <Image src={btn3}  alt="btn" className="h-full w-full object-cover"  />
       </button>
 </div>  
 
@@ -781,15 +1223,15 @@ ils ont adoré</h2>
 
 
 
-<div className="flex flex-col gap-y-8">
+<div className="flex flex-col  gap-y-4">
 
-<h3 className="text-7xl text-custom-marron-dark "> ornement</h3>
+<h3 className="text-5xl text-custom-marron-dark "> ornement</h3>
 <span className="text-lg text-balance">Choisissez votre pierre précieuse</span>
 
 <div className="flex justify-start w-full items-center gap-x-4">
       
       <button className="outline-offset-4 outline rounded-full">
-        <div className="size-10 rounded-full bg-[#017AD7] "></div>
+      <Image src={btn1}  alt="btn" className="h-full w-full object-cover"  />
       </button>
 
       <button className="  rounded-full">
@@ -810,11 +1252,11 @@ ils ont adoré</h2>
 
 
 
-<div className="flex flex-col gap-y-8 w-full ">
+<div className="flex flex-col gap-y-6 w-full ">
 
 
 
-<h3 className="text-7xl text-custom-marron-dark "> pack saveur</h3>
+<h3 className="text-5xl text-custom-marron-dark "> pack saveur</h3>
 <span className="text-lg text-balance">Choisissez votre pack de saveurs</span>
 
 <div className="flex justify-start flex-col gap-y-2 w-full items-center gap-x-4">
@@ -860,11 +1302,11 @@ ils ont adoré</h2>
 
               </section>
 
-              <footer className="w-full py-20 flex flex-col justify-start items-start relative min-h-[61rem] bg-custom-marron-dark">
+              <footer className="w-full z-0 py-20 flex flex-col justify-start items-start relative min-h-[61rem] bg-custom-marron-dark">
               <div className="w-full flex gap-x-20 relative z-10 justify-start items-start">
               <div className="w-7/12 flex justify-end items-center">
 
-<div className="rounded-lg w-10/12 bg-white min-h-[35rem] ">
+<div className="rounded-lg w-10/12   min-h-[35rem] ">
 
 
 </div>
@@ -954,13 +1396,36 @@ tototte store  Lille
           </div>
 
 
-          <button className="w-full bg-custom-light-marron py-4">
+          <button className="w-full relative flex group hover:bg-custom-light-marron/30 transition-all ease duration-500 overflow-hidden justify-center items-center bg-custom-marron py-6">
 
-            <span>Ajouter au Panier</span>
+              <div className="flex absolute opacity-80 z-0  -rotate-12 -left-[50%] group-hover:left-[150%] transition-all ease duration-700 w-40">
+
+              <div className="h-36 w-24 parallelogramme bg-[#0066FF] ">
+
+
+</div>
+<div className="h-36 w-24 parallelogramme bg-[#0007AF] ">
+
+
+</div>
+
+                  <div className="h-36 w-24 parallelogramme bg-[#C40018] ">
+
+
+                  </div>
+                  <div className="h-36 w-24 parallelogramme bg-[#FF5A5A] ">
+
+
+</div>
+
+
+              </div>
+
+            <span className="absolute z-10">Ajouter au Panier</span>
 
           </button>
 
-          <p className="text-sm text-balance text-custom-light-marron font-thin">
+          <p className="text-xs text-balance text-custom-light-marron font-thin">
           The French Tototte est couverte par une garantie limitée
            contre les défauts de fabrication pour une période de 2 mois
             à compter de la date d&qpos;achat. Cette garantie ne couvre pas 
@@ -1073,7 +1538,7 @@ tototte store  Lille
 <h3 className="text-4xl">
 the french tototte
 </h3>
-<span className="text-sm tex-balance w-8/12">
+<span className="text-xs tex-balance w-8/12">
 Copyright © 2024 TheFrenchTototte. Tous droits réservés  — Utilisation des cookies — Mention légales.
 Sur une idée originale d’Antoine Daniel, concept art par Tera Silver, 3D par Aurélien Thomas, logo par Baloprisonnier, 3D print par Lunath & Packaging par Illusion
 </span>
