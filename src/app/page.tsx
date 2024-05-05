@@ -56,8 +56,6 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { useState,useEffect } from "react";
 export default function Home() {
-  gsap.registerPlugin(ScrollTrigger);
-
 
 
   const [isScrollOk,setIscrollOk] = useState(false)
@@ -68,6 +66,9 @@ export default function Home() {
   const [state,setState] = useState("option1")
 
   useGSAP(() => {
+    
+  gsap.registerPlugin(ScrollTrigger);
+
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".rotatetotote",
@@ -75,7 +76,7 @@ export default function Home() {
         end: "bottom  50%",   
         toggleActions: "play reverse reverse reverse",
         scrub: 4,
-        markers: true
+        markers: false
       }
     });
 
@@ -94,6 +95,7 @@ export default function Home() {
         start:"top top",
         end:"+=2400",
         pin:true,
+        markers:false
       }
     });
 
