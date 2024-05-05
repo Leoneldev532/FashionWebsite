@@ -18,14 +18,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <meta charSet="utf-8"/>
-      <body className={inter.className + "flex text-custom-light-marron bg-custom-white  flex-col justify-center items-center"}>
-          <div className="flex 2xl:hidden w-full min-h-screen  gap-y-4 flex-col  justify-center items-center">
+      <body className={inter.className + "flex text-custom-light-marron bg-custom-white w-full  flex-col justify-center items-center"}>
+          <div className="flex 2xl:hidden flex  min-h-screen  gap-y-4 flex-col  justify-center items-center">
 
             <h2 className="text-3xl">version mobile disponible bientot </h2> 
             <span className="text-2xl">moins de  2 jours </span>
 
            </div> 
-        <div className=" w-full hidden 2xl:flex   flex-col relative  justify-center overflow-hidden items-center">
+        <div className=" w-full hidden 2xl:flex     flex-col relative   justify-center overflow-hidden items-center">
         <div className="relative   justify-center   w-full items-center">
           <div className="absolute top-0  h-auto z-0 w-full  max-w-[1550px] ">
 
@@ -88,7 +88,7 @@ export default function RootLayout({
 
           </div>
           </div>
-          <div className="relative flex w-full   justify-center items-center z-0">
+          <div className="relative flex w-full  max-w-[1700px] overflow-hidden  justify-center items-center z-0">
         {children}
 
         </div>
