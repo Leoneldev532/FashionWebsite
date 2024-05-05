@@ -114,7 +114,7 @@ export default function Home() {
 
   useEffect(() => {
     const handleScroll = (e:any) => {
-      if (window.scrollY  > 900) {  
+      if (window.scrollY  > 800) {  
         setIscrollOk(true);
       }else{
         setIscrollOk(false);
@@ -540,9 +540,9 @@ Technologies de pointe offrant une expérience de suçotage révolutionnaire et 
 
 </div>
 
-<h4 className="font-bold text-2xl"> Fraise </h4>
+<h4 className="font-bold text-2xl"> Menthe </h4>
 <span className="text-sm">
-une fraise francaise  cueillie dans nos cheres  regions
+ pour une haleine fraiche avant vos renions
 </span>
 
 </div>
@@ -571,9 +571,9 @@ une fraise francaise  cueillie dans nos cheres  regions
 
 </div>
 
-<h4 className="font-bold text-2xl"> Fraise </h4>
+<h4 className="font-bold text-2xl"> Bubble gum </h4>
 <span className="text-sm">
-une fraise francaise  cueillie dans nos cheres  regions
+un gout sucre pour retourner a l enfance
 </span>
 
 </div>
@@ -597,14 +597,15 @@ une fraise francaise  cueillie dans nos cheres  regions
 <span className="text-4xl absolute top-[7.5rem]  left-[14.65%] text-black">.</span>
 <div className="w-56 h-28 flex relative  border flex-col border-custom-marron-dark p-3  flex-wrap ">
 
+
 <div className="border-r h-12 rotate-[20deg]  absolute  left-[20%] top-[98.25%] border-custom-marron-dark">
 
 
 </div>
 
-<h4 className="font-bold text-2xl"> Fraise </h4>
+<h4 className="font-bold text-2xl"> Spicy </h4>
 <span className="text-sm">
-une fraise francaise  cueillie dans nos cheres  regions
+  pour ceux qui aiment vivre les nouvelles choses
 </span>
 
 </div>
@@ -631,9 +632,9 @@ une fraise francaise  cueillie dans nos cheres  regions
 
 </div>
 
-<h4 className="font-bold text-2xl"> Fraise </h4>
+<h4 className="font-bold text-2xl"> Bacon fume </h4>
 <span className="text-sm">
-une fraise francaise  cueillie dans nos cheres  regions
+  un gout de porc de  nos elevages en france
 </span>
 
 </div>
@@ -660,7 +661,7 @@ une fraise francaise  cueillie dans nos cheres  regions
 
 </div>
 
-<h4 className="font-bold text-2xl"> Fraise </h4>
+<h4 className="font-bold text-2xl"> France </h4>
 <span className="text-sm">
 une fraise francaise  cueillie dans nos cheres  regions
 </span>
@@ -689,7 +690,7 @@ une fraise francaise  cueillie dans nos cheres  regions
 
 </div>
 
-<h4 className="font-bold text-2xl"> Fraise </h4>
+<h4 className="font-bold text-2xl"> Jus de mynthos </h4>
 <span className="text-sm">
 une fraise francaise  cueillie dans nos cheres  regions
 </span>
@@ -718,7 +719,7 @@ une fraise francaise  cueillie dans nos cheres  regions
 
 </div>
 
-<h4 className="font-bold text-2xl"> Fraise </h4>
+<h4 className="font-bold text-2xl"> Montazac </h4>
 <span className="text-sm">
 une fraise francaise  cueillie dans nos cheres  regions
 </span>
