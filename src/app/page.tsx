@@ -156,7 +156,7 @@ export default function Home() {
       {isScrollOk   ?   <h4 className="text-2xl tartuffor    text-custom-marron pb-4">the french tototte</h4>
               :  
               <div className="flex gap-x-4 gustavor items-center justify-center "> 
-      code by   <Link  href="https://bento.me/leoy" className="underline text-custom-marron"  href="/"> Loenel Yimga  </Link> 
+      code by   <Link  href="https://bento.me/leoy" className="underline text-custom-marron"  > Loenel Yimga  </Link> 
       design by basti ui </div>  }
 
 <Link href="/"><button className="bg-custom-marron group relative overflow-hidden flex justify-center w-36 h-12 items-center text-white px-8 gustavor text-lg  py-2"> 
