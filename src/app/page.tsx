@@ -94,7 +94,6 @@ export default function Home() {
         start:"top top",
         end:"+=2400",
         pin:true,
-        markers: true
       }
     });
 
@@ -113,7 +112,7 @@ export default function Home() {
 
   useEffect(() => {
     const handleScroll = (e:any) => {
-      if (window.scrollY  > 400) {  
+      if (window.scrollY  > 900) {  
         setIscrollOk(true);
       }else{
         setIscrollOk(false);
