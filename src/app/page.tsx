@@ -152,6 +152,11 @@ export default function Home() {
    <header className={`w-full flex justify-between  h-16 ${isScrollOk ? "gradientTopbarre" :"bg-transparent" }   fixed z-[999]  py-16 px-12 items-center` }>
 
 <Image src={logo} alt="logo" className={"object-contain h-8 w-8 "} />
+
+      {isScrollOk   ?   <h4 className="text-2xl tartuffor    text-custom-marron pb-4">the french tototte</h4>
+              :  <div className="flex gap-x-4 gustavor items-center justify-center "> 
+      code by   <Link  href="https://bento.me/leoy" className="underline text-custom-marron"  href="/"> Loenel Yimga  </Link> design by basti ui </div>  }
+
 <Link href="/"><button className="bg-custom-marron group relative overflow-hidden flex justify-center w-36 h-12 items-center text-white px-8 gustavor text-lg  py-2"> 
 
 
@@ -1265,7 +1270,7 @@ dotListClass="custom-dot-list-style"
     <div className="flex border w-full border-custom-marron-dark justify-between  gap-x-2 items-center  p-6 ">
 
         <div className="">
-        <h3 className="text-custom-marron-dark text-xl ">Pack Starter</h3>
+        <h3 className="text-custom-marron-dark text-xl  gustavor font-bold">Pack Starter</h3>
         <span className="text-sm"> 3 saveurs de découverte</span>
         </div>
         <span className="text-sm">offer</span>
@@ -1275,7 +1280,7 @@ dotListClass="custom-dot-list-style"
     <div className="flex  w-full justify-between  gap-x-2 items-center  p-6 ">
 
 <div className="">
-<h3 className="text-custom-marron-dark text-xl ">Pack Suçoteur</h3>
+<h3 className="text-custom-marron-dark text-xl  gustavor font-bold">Pack Suçoteur</h3>
 <span className="text-sm"> 6 saveurs</span>
 </div>
 <span className="text-sm">29€</span>
@@ -1286,7 +1291,7 @@ dotListClass="custom-dot-list-style"
 <div className="flex  w-full justify-between  gap-x-2 items-center  p-6 ">
 
 <div className="">
-<h3 className="text-custom-marron-dark text-xl ">Pack Suçoteur Pro</h3>
+<h3 className="text-custom-marron-dark text-xl  gustavor font-bold">Pack Suçoteur Pro</h3>
 <span className="text-sm"> 12 saveurs + 1 jus de Mynthos</span>
 </div>
 <span className="text-lg flex gap-x-4 "><span className="opacity-50  line-through">60€ </span>

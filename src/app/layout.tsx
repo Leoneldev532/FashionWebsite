@@ -19,9 +19,9 @@ export default function RootLayout({
     <html lang="en">
       <meta charSet="utf-8"/>
       <body className={inter.className + "flex text-custom-light-marron bg-custom-white w-full  flex-col justify-center items-center"}>
-          <div className="flex 2xl:hidden flex  min-h-screen  gap-y-4 flex-col  justify-center items-center">
+          <div className="flex 2xl:hidden   min-h-screen  gap-y-4 flex-col  justify-center items-center">
 
-            <h2 className="text-3xl">version mobile disponible bientot </h2> 
+            <h2 className="text-3xl text-center w-full">version mobile disponible bientot </h2> 
             <span className="text-2xl">moins de  2 jours </span>
 
            </div> 
