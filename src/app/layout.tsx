@@ -89,7 +89,7 @@ export default function RootLayout({
 
           </div>
           </div>
-          <div className="relative flex w-full  max-w-[1700px] overflow-hidden  justify-center items-center z-0">
+          <div className="relative flex w-full  overflow-hidden  justify-center items-center z-0">
         {children}
 
         </div>
